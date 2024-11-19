@@ -52,7 +52,7 @@
 .wp-block-navus-z-pattern .z-pattern-image.full-width{
     position: absolute;
     top: 0;
-    width: 50%;
+    width: calc(50% - 70px);
     right: 0;
     object-fit: cover;
     height: 100%;

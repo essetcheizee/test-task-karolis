@@ -1,0 +1,11 @@
+composer.json
+LICENSE
+package-lock.json
+.eslintrc
+.stylelintrc.json
+/node_modules
+*.map
+*.node
+.env
+readme.txt
+phpcs.xml.dist

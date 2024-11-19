@@ -1,0 +1,114 @@
+{
+    "version": 2,
+    "settings": {
+      "appearanceTools": true,
+      "spacing": {
+        "customPadding": true,
+        "customMargin": true,
+        "units": [
+          "%",
+          "px",
+          "em",
+          "rem",
+          "vh",
+          "vw"
+        ]
+      },
+      "color": {
+        "palette": [
+          { "slug": "dark-gray", "color": "#221F20", "name": "Dark Gray" },
+          { "slug": "dark", "color": "#000000", "name": "Dark" },
+          { "slug": "white", "color": "#FFFFFF", "name": "White" },
+          { "slug": "yellow-accent", "color": "#ECDD4D", "name": "Yellow Accent" }
+        ]
+      },
+      "typography": {
+        "fontFamilies": [
+          { "slug": "raleway", "fontFamily": "'Raleway', sans-serif", "name": "Raleway" },
+          { "slug": "poppins", "fontFamily": "'Poppins', sans-serif", "name": "Poppins" }
+        ],
+        "fontSizes": [
+          { "slug": "default", "size": "20px", "name": "Default" }
+        ],
+        "customLineHeight": true
+      }
+    },
+    "styles": {
+      "elements": {
+        "h1": {
+          "typography": {
+            "fontFamily": "Raleway, sans-serif",
+            "lineHeight": "72px",
+            "fontSize": "60px"
+          }
+        },
+        "h2": {
+          "typography": {
+            "fontFamily": "Raleway, sans-serif",
+            "lineHeight": "72px",
+            "fontSize": "49px!important"
+          }
+        },
+        "h3": {
+          "typography": {
+            "fontFamily": "Raleway, sans-serif",
+            "lineHeight": "72px",
+            "fontSize": "35px!important"
+          }
+        },
+        "link": {
+          "typography": {
+            "fontFamily": "Raleway, sans-serif"
+          }
+        },
+        "button": {
+          "typography": {
+            "fontFamily": "Raleway, sans-serif"
+          }
+        },
+        "p": {
+          "typography": {
+            "fontFamily": "Poppins, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px"
+          }
+        }
+      },
+      "blocks": {
+        "core/paragraph": {
+          "typography": {
+            "fontFamily": "Poppins, sans-serif",
+            "fontSize": "20px",
+            "lineHeight": "30px"
+          }
+        },
+        "core/button": {
+          "typography": {
+            "fontFamily": "Raleway, sans-serif"
+          },
+          "border": {
+            "width": "1px",
+            "style": "solid",
+            "color": "#ECDD4D"
+          },
+          "color": {
+            "text": "#ECDD4D",
+            "background": "transparent"
+          }
+        }
+      },
+
+      "editorStyles": {
+        "elements": {
+          "h1": {
+            "typography": {
+              "fontFamily": "Raleway, sans-serif",
+              "lineHeight": "72px",
+              "fontSize": "60px"
+            }
+          }
+        }
+      }
+    }
+  }
+  

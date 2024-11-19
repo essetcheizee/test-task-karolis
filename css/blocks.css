@@ -1,0 +1,239 @@
+/* BLOCK STYLES */
+:root{
+--swiper-navigation-size: 55px;
+--swiper-navigation-font-size: 27px;
+--swiper-navigation-sides-offset: -30px;
+--swiper-pagination-bottom: -48px;
+--swiper-pagination-bullet-height: 3px;
+--swiper-pagination-bullet-width: 37px;
+--swiper-pagination-color: #000;
+--swiper-pagination-bullet-inactive-color: #d9d9d9;
+--swiper-pagination-bullet-border-radius: 0;
+--testimonial-wrapper-bg: #fff;
+--z-pattern-background: transparent;
+--z-pattern-z-index: 1;
+--z-pattern-top-space: 0;
+--z-pattern-margin-space: 0;
+}
+/* General */
+:where(.wp-block-post-content) h1{
+    position: relative;
+    z-index: 1;
+}
+:where(.wp-block-post-content) h1::after{
+	content: "";
+	background: var(--wp--preset--color--yellow-accent);
+	width: 318px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	bottom: 14px;
+	z-index: -1;
+    left: var(--after-left,0); /* Dynamically set left position */
+    width: 318px;
+}
+:where(.wp-block-post-content) .has-yellow-accent-background-color h1::after{
+    width: 236px;
+    background: var(--wp--preset--color--white);
+}
+/* Z PATTERN */
+.wp-block-navus-z-pattern{
+	position: relative;
+    background: var(--z-pattern-background);
+    z-index: var(--z-pattern-z-index);
+}
+.wp-block-navus-z-pattern .z-pattern-content{
+	margin-top: 140px;
+	margin-bottom: 114px;
+}
+.wp-block-navus-z-pattern .z-pattern-image{
+
+}
+.wp-block-navus-z-pattern .z-pattern-image.full-width{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+}
+.wp-block-navus-z-pattern .row:not(.reversed) .z-pattern-content{
+	padding-left: 0!important;
+}
+.wp-block-navus-z-pattern .reversed{
+	flex-direction: row-reverse;
+}
+.wp-block-navus-z-pattern .reversed .z-pattern-content{
+	padding-right: 0!important;
+}
+.wp-block-navus-z-pattern .reversed .z-pattern-image.full-width{
+	left: 0;
+}
+/* SECTION DIVIDER */
+.wp-block-navus-section-divider{
+    position: relative;
+    z-index: 9;
+}
+.wp-block-navus-section-divider div{
+    position: absolute;
+    top: -64px;
+}
+.wp-block-navus-section-divider .left{
+    left: 0;
+}
+.wp-block-navus-section-divider .middle{
+    left: 50%;
+}
+.wp-block-navus-section-divider .right{
+    right: 0;
+}
+
+/* TESTIMONIALS */
+.wp-block-navus-testimonials{
+    margin: 130px 0 140px;
+}
+.wp-block-navus-testimonials .navus-testimonial-quote-text{
+    display: inline;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+.wp-block-navus-testimonials h1{
+    margin-bottom: 80px;
+}
+.wp-block-navus-testimonials .img-wrapper{
+    margin-right: 24px;
+}
+.wp-block-navus-testimonials .testimonee-details h4{
+    margin-bottom: 0;
+}
+.wp-block-navus-testimonials .testimonee-details p{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-family: Raleway,sans-serif;
+}
+.wp-block-navus-testimonials .swiper-container{
+    margin: 60px 0 40px;
+    overflow: hidden;
+}
+.wp-block-navus-testimonials .testimonial-wrapper{
+    border: 3px solid var(--wp--preset--color--dark);
+    /* overflow: hidden; */
+    background-color: var(--testimonial-wrapper-bg);
+    position: relative;
+}
+.wp-block-navus-testimonials .testimonial-slide{
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: calc(100% - 100px);
+}
+.wp-block-navus-testimonials .slide-btns{
+    background: var(--wp--preset--color--yellow-accent);
+    width: var(--swiper-navigation-size);
+    font-weight: 600;
+}
+.wp-block-navus-testimonials .slide-btns::after{
+    font-size: var(--swiper-navigation-font-size);
+    color: var(--wp--preset--color--dark);
+}
+:where(.editor-styles-wrapper) .wp-block-navus-testimonials .testimonial-slide{
+    max-width: unset;
+}
+
+/* STEPS */
+.wp-block-navus-steps{
+
+}
+.wp-block-navus-steps h1{
+    margin-bottom: 80px;
+}
+.wp-block-navus-steps .step-counter{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.wp-block-navus-steps .step-counter-item.active{
+    color: var(--wp--preset--color--white);
+    background: var(--wp--preset--color--dark);
+    border-color: var(--wp--preset--color--dark);
+    opacity: 1;
+}
+.wp-block-navus-steps .step-counter-item{
+    width: 82px;
+    height: 82px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: transparent;
+    border-radius: 50%;
+    border-style: dashed;
+    background: transparent;
+    color: var(--wp--preset--color--dark);
+    border-width: 2px;
+    opacity: .5;
+    position: relative;
+    cursor: pointer;
+}
+.wp-block-navus-steps .step-items .step-item h3{
+    margin-bottom: 30px;
+    line-height: 33px;
+}
+.wp-block-navus-steps .step-items .step-item{
+    display: none;
+}
+.wp-block-navus-steps .step-items .step-item.show{
+    display: block;
+}
+.wp-block-navus-steps .step-counter-item:not(:first-child):before{
+    width: 100px;
+    display: block;
+    height: 1px;
+    background: var(--wp--preset--color--dark);
+    content: '';
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: -155%;
+}
+.wp-block-navus-steps .step-counter-item h2{
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+/* Media Queries */
+@media (max-width: 1199px) {
+    .wp-block-navus-steps .step-counter .step-counter-item::before{
+        content: unset;
+    }
+}
+
+@media (max-width: 767px) {
+    .wp-block-navus-z-pattern .container .row .z-pattern-content{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .wp-block-navus-z-pattern .z-pattern-image.full-width{
+        position: relative;
+        width: 100%;
+    }
+
+
+    .wp-block-navus-testimonials .testimonial-slide{
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: calc(100% - 30px);
+    }
+    .wp-block-navus-testimonials .slide-btns{
+        display: none;
+    }
+    .wp-block-navus-steps .step-counter{
+        column-gap: 32px;
+        justify-content: space-between;
+    }
+}
